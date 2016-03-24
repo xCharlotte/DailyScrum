@@ -1,0 +1,23 @@
+<h1>Nieuw Logboek</h1>
+
+<%= render 'form' %>
+<%= link_to 'Terug', logbooks_path %>
+
+<%= form_for :logbook, url: logbooks_path do |f| %>
+
+<% if @logbook.errors.any? %>
+  
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@logbook.errors.count, "error") %>
+  prohibited
+      this log from being saved:
+    </h2>
+    <ul>
+      <% @logbook.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+<% end %>

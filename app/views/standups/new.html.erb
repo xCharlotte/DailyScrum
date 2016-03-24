@@ -1,0 +1,29 @@
+<h1>Nieuwe Stand-up</h1>
+
+<%= link_to 'Terug', standups_path %>
+
+<%= form_for @standup do |f| %>
+
+  <p>
+    <%= f.collection_select(:team_id, @team, :id, :full_name, {},{}) %>
+  </p>
+
+  <p>
+    <%= f.label 'Wat heb je gister gedaan?' %><br>
+    <%= f.text_area :yesterday %>
+  </p>
+ 
+  <p>
+    <%= f.label 'Wat ga je vandaag doen?' %><br>
+    <%= f.text_area :today %>
+  </p>
+ 
+  <p>
+    <%= f.label 'Liep je ergens tegenaan?' %><br>
+    <%= f.text_area :problems %>
+  </p>
+
+  <p>
+    <%= f.submit 'Opslaan' %>
+  </p>
+<% end %>

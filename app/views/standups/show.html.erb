@@ -1,0 +1,19 @@
+<p><b>Naam:</b> <%= @standup.team.full_name %></p>
+
+<p>
+  <b>Wat heb je gister gedaan?</b>
+  <%= @standup.yesterday %>
+</p>
+
+<p>
+  <b>Wat ga je vandaag doen?</b>
+  <%= @standup.today %>
+</p>
+
+<p>
+  <b>Liep je ergens tegenaan?</b>
+  <%= @standup.problems %>
+</p>
+
+<%= link_to 'Bewerk', edit_standup_path(@standup) %>
+<%= link_to 'Terug', standups_path %>

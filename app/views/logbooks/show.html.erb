@@ -1,0 +1,10 @@
+<p>
+  <%= @logbook.title %>
+</p>
+
+<p>
+  <%= @logbook.text %>
+</p>
+
+<%= link_to 'Bewerk', edit_logbook_path(@logbook) %>
+<%= link_to 'Terug', logbooks_path %>

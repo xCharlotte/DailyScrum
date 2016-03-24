@@ -1,0 +1,19 @@
+<h1>Nieuw Teamlid</h1>
+
+<%= link_to 'Terug', teams_path %>
+
+<%= form_for @team do |f| %>
+  <p>
+    <%= f.label 'Voornaam' %><br>
+    <%= f.text_field :first_name %>
+  </p>
+ 
+  <p>
+    <%= f.label 'Achternaam' %><br>
+    <%= f.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= f.submit "Opslaan", class: "btn-submit" %>
+  </p>
+<% end %>

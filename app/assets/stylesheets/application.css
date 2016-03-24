@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+  font-family: avenir book, tahoma;
+}
+
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.navigation-background {
+  background-color: #3f3f3f;
+  padding: 10px 0;
+}
+.navigation {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+.navigation a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  background-color: #d4d4d4;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li {
+  /*display: block;*/
+  color: #3f3f3f;
+  text-align: center;
+ /*padding: 14px 16px;*/
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #000;
+}
+
+.btn-submit {
+  margin-top: 15px;
+  background-color: #999;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.login {
+margin-top: 15%;
+}
