@@ -14,7 +14,9 @@
  *= require_self
  */
 
- @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100,400italic);
+ //@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100,400italic);
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100,400italic|Nunito:400,700,300);
 
 html {
 }
@@ -45,7 +47,7 @@ h1 {
 body {
   background-image: image-url('background-login.png');
   background-color: #d4d4d4;
-  font-family: 'lato';
+  font-family: 'Nunito';
 }
 
 
