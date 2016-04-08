@@ -9,8 +9,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
   </head>
   <body>
-    
-    <h1>DailyScrum</h1>
 
     <% if current_user %>
       <nav class="navigation-background">
@@ -32,12 +30,12 @@
     <% end %>
 
     <%= yield %>
-    
+
     <% unless current_user %>
       <% unless current_page?(signup_path) || current_page?(new_user_path) %>
         <%= render 'sessions/new' %>
       <% end %>
     <% end %>
-    
+
   </body>
 </html>

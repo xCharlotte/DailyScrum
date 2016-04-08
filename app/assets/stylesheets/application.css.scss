@@ -14,8 +14,9 @@
  *= require_self
  */
 
+ @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100,400italic);
+
 html {
-  font-family: avenir book, tahoma;
 }
 
 
@@ -33,8 +34,8 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-
 }
+
 .navigation a {
   color: white;
   text-decoration: none;
@@ -42,7 +43,9 @@ h1 {
 }
 
 body {
+  background-image: image-url('background-login.png');
   background-color: #d4d4d4;
+  font-family: 'lato';
 }
 
 
@@ -51,35 +54,49 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
 }
+
 
 li {
   float: left;
 }
 
 li {
-  /*display: block;*/
   color: #3f3f3f;
   text-align: center;
- /*padding: 14px 16px;*/
 }
 
 a {
-  color: #666;
+  color: #000;
   text-decoration: none;
 }
+
 a:hover, a:focus {
-  color: #000;
+  color: #666;
 }
 
 .btn-submit {
   margin-top: 15px;
-  background-color: #999;
+  background-color: #ffa800;
   padding: 10px 20px;
   border: 0;
 }
 
 .login {
-margin-top: 15%;
+  text-align: center;
+  margin: 15% auto 0 auto;
+  background-color: white;
+  padding: 20px 15px;
+  min-width: 350px;
+  width: 15%;
+}
+
+.logo {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid black;
+
+  img {
+    width: 90%;
+  }
 }

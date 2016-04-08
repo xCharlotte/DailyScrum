@@ -1,18 +1,20 @@
 <div class="login">
 	<div class="container">
+    <div class="logo">
+      <%= image_tag "dailylogo.png" %>
+    </div>
 		<div class="form">
-			
-			<%= form_for(:session, url: login_path) do |f| %>
-        <b>Gebruikersnaam</b>
-			  <br><%= f.email_field :email %> 
+
+			<%= form_for(:session, url: login_path, method: :post) do |f| %>
+        <b>E-mail</b>
+			  <br><%= f.email_field :email %>
         <br><b>Wachtwoord</b>
-			  <br><%= f.password_field :password %> 
-			  <br><%= f.submit "LOG IN", class: "btn-submit" %>
+			  <br><%= f.password_field :password %>
+			  <br><b><%= f.submit "Log in", class: "btn-submit" %></b>
+        <br>
+        <br><%= link_to "Registreren", 'signup' %>
 			<% end %>
-		
+
     </div>
 	</div>
-  <div>
-    <%= link_to "Registreren", 'signup' %>
-  </div>
 </div>

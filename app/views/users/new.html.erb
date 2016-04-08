@@ -1,8 +1,9 @@
 <div class="login">
   <div class="container">
+    <div class="logo">
+      <%= image_tag "dailylogo.png" %>
+    </div>
     <div class="form">
-
-    <h1>Registreren</h1>
 
     <%= form_for(@user) do |f| %>
       <br><a>Voornaam</a>
@@ -13,12 +14,11 @@
       <br><%= f.email_field :email %>
       <br><a>Wachtwoord</a>
       <br><%= f.password_field :password %>
-      <br><%= f.submit "Opslaan", class: "btn-submit" %>
+      <br><b><%= f.submit "Registreren", class: "btn-submit" %></b>
+      <br>
+      <br><%= link_to 'Terug', root_path %>
     <% end %>
 
-  
     </div>
   </div>
 </div>
-
-<%= link_to 'Terug', root_path %>

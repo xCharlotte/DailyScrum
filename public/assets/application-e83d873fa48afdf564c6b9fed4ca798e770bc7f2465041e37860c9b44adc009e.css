@@ -6,6 +6,7 @@
      without disabling user zoom.
  */
 
+
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -421,4 +422,117 @@ table {
 td,
 th {
   padding: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+html {
+  font-family: hand of sean;
+}
+
+/* line 23, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+h1 {
+  text-align: center;
+  color: black;
+}
+
+/* line 28, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.navigation-background {
+  background-color: #3f3f3f;
+  padding: 10px 0;
+}
+
+/* line 32, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.navigation {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 39, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.navigation a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* line 45, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+body {
+  background-image: url(/assets/background-login-3a5e46cb5f8c584b21df683a4b1f784b475b82c5d0917085b68e3d2ee0fda9a9.png);
+  background-color: #d4d4d4;
+}
+
+/* line 51, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 59, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+li {
+  float: left;
+}
+
+/* line 63, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+li {
+  color: #3f3f3f;
+  text-align: center;
+}
+
+/* line 68, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 72, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+a:hover, a:focus {
+  color: #000;
+}
+
+/* line 76, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.btn-submit {
+  margin-top: 15px;
+  background-color: #999;
+  padding: 10px 20px;
+  border: 0;
+}
+
+/* line 83, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.login {
+  font-family: avenir book;
+  text-align: center;
+  margin: 15% auto 0 auto;
+  background-color: white;
+  padding: 50px 15px;
+  min-width: 350px;
+  width: 15%;
+  height: 200px;
+}
+
+/* line 94, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.logo {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+/* line 99, /Users/Charlotte/Nextweb/daily_standup/app/assets/stylesheets/application.css.scss */
+.logo img {
+  width: 100%;
 }
