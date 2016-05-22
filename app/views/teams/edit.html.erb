@@ -1,11 +1,11 @@
 <h1>Bewerk Teamleden</h1>
- 
+
 <%= form_for :team, url: team_path(@team), method: :patch do |f| %>
- 
+
 <% if @team.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@team.errors.count, "error") %> 
+        <%= pluralize(@team.errors.count, "error") %>
 prohibited
         this log from being saved:
       </h2>
@@ -16,21 +16,20 @@ prohibited
       </ul>
     </div>
   <% end %>
- 
+
   <p>
     <%= f.label 'Voornaam' %><br>
     <%= f.text_field :first_name%>
   </p>
- 
+
   <p>
     <%= f.label 'Achternaam' %><br>
     <%= f.text_field :last_name %>
   </p>
- 
+
   <p>
     <%= f.submit "Opslaan", class: "btn-submit" %>
   </p>
- 
+
 <% end %>
- 
 <%= link_to 'Terug', teams_path %>
