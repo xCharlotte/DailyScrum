@@ -1,0 +1,3 @@
+# DailyScrum
+
+First Rails project 
